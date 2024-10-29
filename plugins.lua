@@ -23,6 +23,8 @@ local plugins = {
                 "eslint-lsp",
 
                 "prettierd",
+
+                "terraform-ls",
             },
         }
     },
@@ -39,12 +41,18 @@ local plugins = {
             local op = require "plugins.configs.treesitter"
             op.ensure_installed = {
                 "go",
+
                 "lua",
+
                 "python",
+
                 "javascript",
                 "typescript",
                 "tsx",
                 "css",
+
+                "hcl",
+                "terraform",
             }
             return op
         end
